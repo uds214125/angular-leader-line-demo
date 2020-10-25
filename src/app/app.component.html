@@ -1,0 +1,22 @@
+<div class="table-boundary">
+	<table *ngFor="let row of tableData?.data; let i=index;" class="table-style">
+		<tr>
+			<th colspan="2" class="table-name"><span>{{row.tablename}}</span></th>
+		</tr>
+		<tr>
+			<th>Column</th>
+			<th>DataType</th>
+		</tr>
+		<tr *ngFor="let col of row.columndetails; let j=index;">
+			<td>{{ col.name }}</td>
+			<td>
+				{{ col.type }}
+				<span *ngIf="col.constraints.pk" id="{{col.name}}">{{col.name}}</span>
+				<span *ngIf="col.constraints.fk" id="{{col.name}}">{{col.name}}</span>
+
+				<!-- <span *ngIf="col.constraints.pk" id="start">{{col.name}}</span>
+				<span *ngIf="col.constraints.fk" id="end">{{col.name}}</span> -->
+			</td>
+		</tr>
+	</table>
+</div>

@@ -1,0 +1,35 @@
+.table-boundary {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 0px 8px 0px 0px;
+  /* border-radius: 30px !important; */
+  border-style: hidden !important;
+  box-shadow: 0 0 0 1px #1f5faa;
+}
+
+table,
+th,
+td {
+  border: 1px solid #1f5faa;
+  margin: 25px;
+  padding: 5px;
+}
+table th td {
+  text-align: left;
+}
+.table-name {
+  text-align: left;
+  background: #1f5faa;
+  border-radius: 0px 5px 0px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 119.5%;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}

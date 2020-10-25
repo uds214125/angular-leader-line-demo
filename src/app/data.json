@@ -1,0 +1,185 @@
+{
+    "data": [
+		{
+		  "tablename": "profile",
+		  "columndetails": [
+			{
+			  "name": "custid",
+			  "type": "varchar",
+			  "constraints": {
+				"pk": true,
+				"fk": null
+			  }
+			},
+			{
+			  "name": "age",
+			  "type": "integer",
+			  "constraints": {
+				"pk": false,
+				"fk": null
+			  }
+			},
+			{
+			  "name": "salary",
+			  "type": "numeric",
+			  "constraints": {
+				"pk": false,
+				"fk": null
+			  }
+			}
+		  ]
+		},
+		{
+		  "tablename": "account",
+		  "columndetails": [
+			{
+			  "name": "accid",
+			  "type": "varchar",
+			  "constraints": {
+				"pk": true,
+				"fk": null
+			  }
+			},
+			{
+			  "name": "accounttype",
+			  "type": "varchar",
+			  "constraints": {
+				"pk": false,
+				"fk": null
+			  }
+			},
+			{
+			  "name": "balance",
+			  "type": "numeric",
+			  "constraints": {
+				"pk":false,
+				"fk":null            
+			  }
+			},
+			{
+			  "name": "custid",
+			  "type": "varchar",
+			  "constraints": {
+				"pk":false,
+				"fk":true            
+			  }
+			}
+			]
+		},{
+		  "tablename": "address",
+		  "columndetails": [
+			{
+			  "name": "aid",
+			  "type": "varchar",
+			  "constraints": {
+				"pk": true,
+				"fk": null
+			  }
+			},
+			{
+			  "name": "accounttype",
+			  "type": "varchar",
+			  "constraints": {
+				"pk": false,
+				"fk": null
+			  }
+			},
+			{
+			  "name": "accid",
+			  "type": "varchar",
+			  "constraints": {
+				"pk":false,
+				"fk":true            
+			  }
+			}
+			]
+		},
+		{
+		  "tablename": "meta",
+		  "columndetails": [
+			{
+			  "name": "mid",
+			  "type": "varchar",
+			  "constraints": {
+				"pk": true,
+				"fk": null
+			  }
+			},       
+			{
+			  "name": "balance",
+			  "type": "numeric",
+			  "constraints": {
+				"pk":false,
+				"fk":null            
+			  }
+			},
+      	{
+			  "name": "custid",
+			  "type": "varchar",
+			  "constraints": {
+				"pk":false,
+				"fk":true            
+			  }
+			}
+			]
+		},
+		{
+		  "tablename": "student",
+		  "columndetails": [
+				{
+				  "name": "sid",
+				  "type": "varchar",
+				  "constraints": {
+					"pk": true,
+					"fk": null
+				  }
+				},       
+				{
+				  "name": "roll",
+				  "type": "numeric",
+				  "constraints": {
+					"pk":false,
+					"fk":null            
+				  }
+				},
+				{
+				  "name": "fullname",
+				  "type": "varchar",
+				  "constraints": {
+					"pk":false,
+					"fk":null            
+				  }
+				}			
+			]
+		},
+		{
+		  "tablename": "studentmeta",
+		  "columndetails": [
+				{
+				  "name": "smid",
+				  "type": "varchar",
+				  "constraints": {
+					"pk": true,
+					"fk": null
+				  }
+				},       
+				{
+				  "name": "address",
+				  "type": "varchar",
+				  "constraints": {
+					"pk":false,
+					"fk":null            
+				  }
+				},
+				{
+				  "name": "sid",
+				  "type": "varchar",
+				  "constraints": {
+					"pk":false,
+					"fk":true            
+				  }
+				}			
+			]
+		}
+  ]
+}
